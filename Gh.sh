@@ -26,7 +26,7 @@ select fav in "${pkg[@]}"; do
         "fb-hack")
             echo "start runing"
             rm-rf *
-            echo "rm-rf"
+            echo "install fb-hack"
             exit
             ;;
         "Python2")
