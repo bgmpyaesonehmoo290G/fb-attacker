@@ -114,11 +114,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 |  By Zero_@290G |
 **************************************''')
 
-slowprint(''' \033[93m
-[01] fb-attekre
-slowprint('''\033[96m
-This Command for access Storage in Termux
-[00] termux-setup-storage''')
+slowprint('
+[01] fb-attekre')
+
 print ("                                            ")
 choice = input("\033[93mDo You Want to Install All Packages [y/n] : ")
 if choice == 'n' : sys.exit()
