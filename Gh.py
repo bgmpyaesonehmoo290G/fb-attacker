@@ -101,7 +101,7 @@ o            o
 o            o
    oooo
 ''')
-def slowprint(s):
+def print(s):
     for c in s + '\n' :
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -114,7 +114,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 |  By Zero_@290G |
 **************************************''')
 
-slowprint('
+print('
 [01] fb-attekre')
 
 print ("                                            ")
@@ -127,7 +127,7 @@ def slowprint(s):
         sys.stdout.flush()
         time.sleep(8. / 100)
 print("\033[95m+-------------------------------------------------+")
-slowprint('''\033[95m|           We are INNWA Family           |''')
+print('''\033[95m|           We are INNWA Family           |''')
 print("+-------------------------------------------------+")
 
 input("\n\nPress the enter key to exit : ")
