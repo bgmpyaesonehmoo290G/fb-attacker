@@ -1,9 +1,8 @@
-clear
+
 import random
 import requests
 import pyfiglet
 import time
-import os
 # colors
 yellow='\033[93m'
 gren='\033[92m'
