@@ -3,7 +3,6 @@ import random
 import requests
 import pyfiglet
 import time
-import sys
 import os
 # colors
 yellow='\033[93m'
