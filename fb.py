@@ -1,3 +1,4 @@
+clear
 import random
 import requests
 import pyfiglet
@@ -11,7 +12,7 @@ cyan='\033[96m'
 pink='\033[95m'
 red='\033[91m'
 b='\033[1m'
-
+# code
 a = pyfiglet.figlet_format('facebook-attekre')
 b = pyfiglet.figlet_format('We are Myanmar')
 print(cyan+b+"a"+b+cyan)
